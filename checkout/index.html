@@ -26,7 +26,8 @@
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="../css/theme-mode-custom.css">
   <script type="text/javascript">
-    (function () { var t = document.createElement("script"); t.type = "text/javascript", t.async = !0, t.src = 'https://cdn.firstpromoter.com/fprom.js', t.onload = t.onreadystatechange = function () { var t = this.readyState; if (!t || "complete" == t || "loaded" == t) try { $FPROM.init("76ljv5q9", ".otterwriter.com") } catch (t) { } }; var e = document.getElementsByTagName("script")[0]; e.parentNode.insertBefore(t, e) })();</script>
+    (function () { var t = document.createElement("script"); t.type = "text/javascript", t.async = !0, t.src = 'https://cdn.firstpromoter.com/fprom.js', t.onload = t.onreadystatechange = function () { var t = this.readyState; if (!t || "complete" == t || "loaded" == t) try { $FPROM.init("76ljv5q9", ".otterwriter.com") } catch (t) { } }; var e = document.getElementsByTagName("script")[0]; e.parentNode.insertBefore(t, e) })();
+  </script>
   <!-- Custom stylesheet -->
   <style>
     .btn-primary {
@@ -294,30 +295,3 @@
 </body>
 
 </html>
-
-<head>
-  <meta charset="utf-8">
-  <script src="https://js.braintreegateway.com/web/dropin/1.26.0/js/dropin.min.js"></script>
-</head>
-
-<body>
-  <form id="payment-form" action="/route/on/your/server" method="post">
-    <!-- Putting the empty container you plan to pass to
-      `braintree.dropin.create` inside a form will make layout and flow
-      easier to manage -->
-    <div id="dropin-container"></div>
-    <input type="submit" />
-    <input type="hidden" id="nonce" name="payment_method_nonce" />
-  </form>
-
-  <script type="text/javascript">
-    // Step two: create a dropin instance using that container (or a string
-    //   that functions as a query selector such as `#dropin-container`)
-    braintree.dropin.create({
-      container: document.getElementById('dropin-container'),
-      // ...plus remaining configuration
-    }, (error, dropinInstance) => {
-      // Use `dropinInstance` here
-      // Methods documented at https://braintree.github.io/braintree-web-drop-in/docs/current/Dropin.html
-    });  </script>
-</body>
